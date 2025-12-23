@@ -1,0 +1,1 @@
+export { HighlightTextEditor, HighlightTextEditorController } from './src/main/ets/components/HighlightTextEditor'
