@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "HighlightTextEditor",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}
