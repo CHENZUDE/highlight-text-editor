@@ -1,9 +1,9 @@
 {
   "name": "highlighttexteditor",
   "version": "1.0.0",
-  "description": "Please describe the basic information.",
+  "description": "基于原生鸿蒙原生RichEditor实现的高亮文本编辑器",
   "main": "Index.ets",
-  "author": "",
-  "license": "Apache-2.0",
+  "author": "CHENZUDE",
+  "license": "MIT",
   "dependencies": {}
 }
