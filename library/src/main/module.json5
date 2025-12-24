@@ -1,6 +1,6 @@
 {
   "module": {
-    "name": "HighlightTextEditor",
+    "name": "library",
     "type": "har",
     "deviceTypes": [
       "default"
