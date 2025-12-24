@@ -24,6 +24,12 @@ highlight-text-editor是一个基于鸿蒙操作系统（HarmonyOS）原生RichE
 
 ## 安装方法
 
+使用 ohpm 安装组件：
+
+```bash
+ohpm i @noone/highlight-text-editor
+```
+
 ## API文档
 
 ### HighlightTextEditor组件

@@ -39,8 +39,8 @@
       ]
     },
     {
-      "name": "HighlightTextEditor",
-      "srcPath": "./HighlightTextEditor",
+      "name": "library",
+      "srcPath": "./library",
     }
   ]
 }

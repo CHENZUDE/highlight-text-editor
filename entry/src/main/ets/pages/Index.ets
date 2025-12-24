@@ -1,4 +1,4 @@
-import { HighlightTextEditor, HighlightTextEditorController } from 'highlighttexteditor'
+import { HighlightTextEditor, HighlightTextEditorController } from '@noone/highlight-text-editor'
 
 @Entry
 @Component

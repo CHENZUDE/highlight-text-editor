@@ -6,7 +6,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "highlighttexteditor": "file:../HighlightTextEditor"
+    "@noone/highlight-text-editor": "file:../library"
   }
 }
 
