@@ -100,6 +100,10 @@ export class HighlightTextEditorController {
    */
   keywords: string[] = []
   /**
+   * 是否正在更新样式，避免循环触发
+   */
+  private isUpdatingStyle = false;
+  /**
    * 文本变化回调
    */
   onTextChange: (text: string) => void = () => {
@@ -131,21 +135,32 @@ export class HighlightTextEditorController {
   }
 
   updateTextStyle() {
-    this.keywords.sort((a, b) => {
-      return this._contentText.indexOf(a) - this._contentText.indexOf(b)
-    })
-    this.reController.deleteSpans()
-    let tempText = this._contentText
-    this.keywords.forEach((keyword) => {
-      let index = tempText.indexOf(keyword)
-      if (index != -1) {
-        this.reController.addTextSpan(tempText.substring(0, index),{ style: { fontColor: this.defaultFontColor, fontSize: this.defaultFontSize } })
-        this.reController.addTextSpan(keyword,{ style: { fontColor: this.highlightTextColor, fontSize: this.defaultFontSize } })
-        tempText = tempText.slice(index + keyword.length, tempText.length)
-      }
-    })
-    this.reController.addTextSpan(tempText,
-      { style: { fontColor: this.defaultFontColor, fontSize: this.defaultFontSize } })
+    if (this.isUpdatingStyle) {
+      return;
+    }
+    this.isUpdatingStyle = true;
+
+    try {
+      this.keywords.sort((a, b) => {
+        return this._contentText.indexOf(a) - this._contentText.indexOf(b)
+      })
+      this.reController.deleteSpans()
+      let tempText = this._contentText
+      this.keywords.forEach((keyword) => {
+        let index = tempText.indexOf(keyword)
+        if (index != -1) {
+          this.reController.addTextSpan(tempText.substring(0, index),
+            { style: { fontColor: this.defaultFontColor, fontSize: this.defaultFontSize } })
+          this.reController.addTextSpan(keyword,
+            { style: { fontColor: this.highlightTextColor, fontSize: this.defaultFontSize } })
+          tempText = tempText.slice(index + keyword.length, tempText.length)
+        }
+      })
+      this.reController.addTextSpan(tempText,
+        { style: { fontColor: this.defaultFontColor, fontSize: this.defaultFontSize } })
+    } finally {
+      this.isUpdatingStyle = false
+    }
   }
 
   showKeyboard(context: UIContext) {

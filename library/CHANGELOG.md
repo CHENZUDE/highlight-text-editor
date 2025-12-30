@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2] - Performance Optimization
+
+### Optimizations
+
+- 🔄 优化 `updateTextStyle()` 方法，添加 `isUpdatingStyle` 标志避免循环触发
+
 ## [1.0.1] - Initial Release
 
 ### INFO

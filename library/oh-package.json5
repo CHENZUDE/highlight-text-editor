@@ -1,10 +1,10 @@
 {
   "name": "@noone/highlight-text-editor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于原生鸿蒙原生RichEditor实现的高亮文本编辑器",
   "main": "Index.ets",
   "author": "CHENZUDE",
-  "homepage": "https://github.com/CHENZUDE/highlight-text-editor",
+  "homepage": "https://github.com/CHENZUDE/",
   "repository": "https://github.com/CHENZUDE/highlight-text-editor",
   "license": "MIT",
   "keywords": [
