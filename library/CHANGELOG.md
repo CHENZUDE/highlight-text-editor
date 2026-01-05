@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.3] - Initial Release
+
+### Optimizations
+
+- 优化逻辑
+
 ## [1.0.2] - Performance Optimization
 
 ### Optimizations
