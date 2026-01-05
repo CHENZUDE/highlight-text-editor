@@ -141,9 +141,11 @@ export class HighlightTextEditorController {
     this.isUpdatingStyle = true;
 
     try {
-      this.keywords.sort((a, b) => {
-        return this._contentText.indexOf(a) - this._contentText.indexOf(b)
-      })
+      this.keywords
+        .filter(keyword => this._contentText.includes(keyword)) // 只保留存在的关键词
+        .sort((a, b) => {
+          return this._contentText.indexOf(a) - this._contentText.indexOf(b);
+        });
       this.reController.deleteSpans()
       let tempText = this._contentText
       this.keywords.forEach((keyword) => {
