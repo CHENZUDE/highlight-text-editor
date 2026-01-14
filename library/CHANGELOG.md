@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.4] - Initial Release
+
+### Optimizations
+
+- 修复高亮显示问题
+
 ## [1.0.3] - Initial Release
 
 ### Optimizations

@@ -1,6 +1,6 @@
 {
   "name": "@noone/highlight-text-editor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "基于原生鸿蒙原生RichEditor实现的高亮文本编辑器",
   "main": "Index.ets",
   "author": "CHENZUDE",
