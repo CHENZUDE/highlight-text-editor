@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.5] - Initial Release
+
+### Optimizations
+
+- 优化包体积
+
 ## [1.0.4] - Initial Release
 
 ### Optimizations

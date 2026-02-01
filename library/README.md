@@ -8,8 +8,7 @@ highlight-text-editor是一个基于鸿蒙操作系统（HarmonyOS）原生RichE
 
 ## 效果预览
 
-![效果预览](example/1768394715677.png)
-
+![效果预览](https://free.picui.cn/free/2026/02/01/697f530136bbd.png)
 
 ## 功能特性
 
